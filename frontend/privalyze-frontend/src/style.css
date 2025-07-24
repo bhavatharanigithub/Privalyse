@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #5a5a5a;
+  margin-bottom: 2rem;
+}
+
+.analyzer-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  max-width: 92vw;
+  margin: 0 auto;
+  animation: fadeIn 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-box {
+  width: 100%;
+  height: 140px;
+  padding: 16px;
+  border: 1px solid #d0d7de;
+  border-radius: 14px;
+  font-size: 1rem;
+  resize: none;
+  margin-bottom: 24px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  outline: none;
+  background-color: #f9fafb;
+}
+
+.input-box:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.15);
+}
+
+.analyze-btn {
+  width: 100%;
+  padding: 14px;
+  background: #007aff;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.analyze-btn:hover {
+  background: #0063cc;
+  transform: translateY(-1px);
+}
+
+.result-box {
+  background: #f4f8ff;
+  margin-top: 28px;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: left;
+  font-size: 0.95rem;
+  border-left: 4px solid #007aff;
+  transition: all 0.3s ease;
+}
+
+.result-box h3 {
+  margin-bottom: 12px;
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.result-box span {
+  color: #e63946;
+  font-weight: 600;
+}
+
+.result-box ul {
+  padding-left: 1.3rem;
+  margin: 0;
+}
+
+.result-box li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Subtle fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
